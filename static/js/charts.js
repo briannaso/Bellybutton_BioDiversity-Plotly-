@@ -122,7 +122,7 @@ function buildCharts(sample) {
   };
 
     // 3. Use Plotly to plot the data with the layout.
-    Plotly.newPlot("bubble", bubbleData, bubbleLayout); 
+    Plotly.newPlot("#bubble", bubbleData, bubbleLayout); 
 
 
 // ------------------- Gauge Chart -----------------------
@@ -137,7 +137,7 @@ function buildCharts(sample) {
       {
         domain: { x: [0, 1], y: [0, 1] },
         value: wfreq,
-        title: { text: "<b>Belly Button Washing Frequency</b> <br> Scrubs per Week" },
+        title: { text: "Belly Button Washing Frequency (Scrubs Per Week)" },
         type: "indicator",
         mode: "gauge+number",
         
